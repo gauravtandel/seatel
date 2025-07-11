@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eSIM Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <span>USD</span>
+      <button id="login-btn">Login</button>
+    </div>
+    <div class="tab-switch">
+      <button class="active">eSIM</button>
+      <button>SIM</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/esim-banner.jpg" alt="eSIM banner">
+  </section>
+
+  <section class="countries">
+    <input type="text" placeholder="Search Destination" />
+    <div class="flag-grid">
+      <div><img src="assets/flags/china.png"><p>China</p></div>
+      <div><img src="assets/flags/japan.png"><p>Japan</p></div>
+      <div><img src="assets/flags/korea.png"><p>Korea</p></div>
+      <div><img src="assets/flags/usa.png"><p>USA</p></div>
+    </div>
+  </section>
+
+  <section class="multi-region">
+    <h3>Multi-region</h3>
+    <div class="region-grid">
+      <div>Global</div>
+      <div>Asia</div>
+      <div>Europe</div>
+      <div>North America</div>
+      <div>Africa</div>
+      <div>Middle East</div>
+    </div>
+  </section>
+
+  <section class="guide">
+    <h3>eSIM Installation Guide</h3>
+    <a href="guides/esim-install.pdf" target="_blank">Download PDF</a>
+    <video controls width="100%" src="assets/videos/esim-guide.mp4"></video>
+  </section>
+
+  <section class="order-track">
+    <h3>Track Your Order</h3>
+    <input type="text" placeholder="Enter Order ID" id="order-id"/>
+    <button onclick="trackOrder()">Track</button>
+    <div id="order-status"></div>
+  </section>
+
+  <footer>
+    <nav>
+      <button>Store</button>
+      <button>Order</button>
+      <button>Settings</button>
+    </nav>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
